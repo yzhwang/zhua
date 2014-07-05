@@ -5,7 +5,16 @@
 
 from scrapy.item import Item, Field
 
-class ZhuaItem(Item):
-    title   = Field()
-    owener  = Field()
-    desc    = Field()
+class PostItem(Item):
+    title = Field()
+    author = Field()
+    time = Field()
+    comments = Field()
+
+class CommentItem(Item):
+    author = Field()
+    gender = Field()
+    location = Field()
+    time = Field()
+    text = Field()
+
