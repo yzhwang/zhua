@@ -6,15 +6,15 @@
 from scrapy.item import Item, Field
 
 class PostItem(Item):
+	post_id = Field()
     title = Field()
     author = Field()
     time = Field()
     comments = Field()
 
 class CommentItem(Item):
+	comment_id = Field()
     author = Field()
-    gender = Field()
-    location = Field()
     time = Field()
     text = Field()
 
