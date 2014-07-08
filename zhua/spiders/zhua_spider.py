@@ -82,7 +82,7 @@ class ZhuaSpider(CrawlSpider):
 
         for comment in selector.xpath('//div[@class="post_wrap"]'):
         	comment_id = comment_id_list[iter].strip()
-        	if (comment is not in post_item['comments']):
+        	if (comment not in post_item['comments']):
         		comment_item = CommentItem()
         		comment_item['comment_id'] = comment_id
         		comment_item['author'] = author_list[iter].strip()
