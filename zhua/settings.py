@@ -10,6 +10,7 @@ BOT_NAME = 'zhua'
 
 SPIDER_MODULES = ['zhua.spiders']
 NEWSPIDER_MODULE = 'zhua.spiders'
+ITEM_PIPELINES = ['zhua.pipelines.ZhuaPipeline']
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'zhua (+http://www.yourdomain.com)'
