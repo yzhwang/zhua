@@ -1,7 +1,7 @@
-from scrapy.contrib.spiders import CrawlSpider
+from scrapy.spiders import CrawlSpider
 from scrapy.http import Request, FormRequest
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
-from scrapy.contrib.spiders import Rule
+from scrapy.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.spiders import Rule
 from scrapy.selector import Selector
 from zhua.items import PostItem, CommentItem
 import re
