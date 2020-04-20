@@ -9,12 +9,15 @@ class PostItem(Item):
 	post_id = Field()
 	title = Field()
 	author = Field()
+	gender = Field()
+	location = Field()
 	time = Field()
 	comments = Field()
 
 class CommentItem(Item):
 	comment_id = Field()
 	author = Field()
+	gender = Field()
+	location = Field()
 	time = Field()
 	text = Field()
-
